@@ -1,5 +1,11 @@
+import "zone.js/dist/zone";
+import 'zone.js/dist/zone-testing';
 import { TestBed } from '@angular/core/testing';
+import { BrowserDynamicTestingModule, platformBrowserDynamicTesting } from '@angular/platform-browser-dynamic/testing';
 import { AppComponent } from './app.component';
+
+TestBed.initTestEnvironment(
+  BrowserDynamicTestingModule, platformBrowserDynamicTesting());
 
 describe('AppComponent', () => {
   beforeEach(async () => {
